@@ -1,0 +1,337 @@
+/******* Inicio estilos generales *******/
+* {
+    font-family: 'Bebas Neue';
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    display: flex;
+    height: 80px;
+    background: #EFE8D2;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px 0 100px;
+    flex-wrap: wrap;
+}
+
+.menu__logo img {
+    height: 85px;
+}
+
+.menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.menu ul li a {
+    font-size: 25px;
+    font-weight: 500;
+    color: #000000;
+    text-decoration: none;
+    padding: 15px;
+}
+.menu ul li a:hover {
+    font-weight: 600;
+}
+
+.titulo {
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer {
+    height: 80px;
+    background: #EFE8D2;
+    align-items: center;
+    flex-wrap: wrap;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+}
+
+.footer__links {
+    width: 11%;
+    display:flex;
+    justify-content: space-between;
+}
+
+.footer__links img { 
+    width:25px;
+}
+
+.footer__p {
+    display:flex;
+    align-items: center;
+    font-size: 60%;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/******* Fin estilos generales *******/
+
+/******* Inicio estilos sección Home *******/
+.banner_inicio {
+    display: flex;
+}
+
+.banner_inicio_izq {
+    width: 47%;
+    flex-direction:column;
+    list-style: none;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5%;
+}
+
+.banner_inicio_izq h3 {
+    font-size: 40px;
+    font-weight: 500;
+    color: #9C8237;
+}
+
+.banner_inicio_izq p {
+    font-size: 20px;
+    font-weight: 500;
+    color: #9C8237;
+}
+
+.banner_inicio_izq button {
+    font-weight: 500;
+    background-color: #9C8237;
+    padding: 10px 30px 10px 30px;
+    border-radius: 5%;
+    border-color: #9C8237;
+}
+.banner_inicio_izq a {
+    text-decoration: none;
+    color: #EFE8D2; 
+    font-size: 25px;
+}
+
+
+.banner_inicio_der {
+    flex-direction:row;
+    list-style: none;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5%;
+}
+
+.banner_inicio_der_img1{
+    width: 47%;
+    border-radius: 65px 0px 0px 0px;
+}
+
+.banner_inicio_der_img2{
+    width: 47%;
+    border-radius: 0px 0px 0px 65px;
+}
+
+/******* Fin estilos sección Home *******/
+
+/******* Inicio estilos sección Catálogo *******/
+.catalogo {
+    display: flex; 
+    flex-wrap: wrap; 
+    flex-direction: row;
+    align-content:stretch;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.catalogo__producto {
+    display: flex; 
+    flex-direction: column;
+    margin: 10px;
+    border: 1px solid #9C8237;
+    padding: 5px;
+    border-radius: 25px;
+}
+
+.catalogo__producto img {
+    border-radius: 25px;
+}
+
+.catalogo__producto__descripcion {
+    display: flex; 
+    flex-direction: column;
+    text-align: center;
+}
+
+.catalogo__producto__descripcion__nombre {
+    font-weight: bold;
+}
+
+/******* Fin estilos sección Catálogo *******/
+
+/******* Inicio estilos sección Nosotros *******/
+.nosotros {
+    flex-direction:row;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5%;
+}
+
+.nosotros img {
+    width: 47%;
+    border-radius: 25px;
+}
+
+.nosotros p {
+    width: 47%;
+}
+
+
+/******* Fin estilos sección Nosotros *******/
+
+/******* Inicio estilos sección Galería *******/
+
+.galeria {
+    flex-direction:row;
+    list-style: none;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5%;
+}
+
+.galeria img {
+    width: 47%;
+    border-radius: 25px;
+}
+
+/******* Fin estilos sección Galería *******/
+
+/******* Inicio estilos sección Contacto *******/
+
+.formulario {
+    flex-direction:row;
+    list-style: none;
+    background: #ffffff;
+    display:flex;
+    padding: 5%;
+    justify-content: center;
+    gap: 15rem;
+}
+
+.formulario__izquierdo {
+    flex-direction:column;
+    list-style: none;
+    display:flex;
+}
+
+.formulario__izquierdo img {
+    width: 40px;
+}
+
+
+.formulario__izquierdo__item {
+    flex-direction:row;
+    list-style: none;
+    display:flex;
+}
+
+.formulario__izquierdo__item p {
+    margin: 10px;
+}
+
+.formulario__derecho {
+    width: 30%;
+}
+
+.formulario__derecho__div {
+    margin-bottom: 10px;
+}
+
+.formulario__derecho__div label {
+    margin-bottom: 5px;
+}
+
+.formulario__derecho input {
+    margin-top: 5px;
+    width: 100%;
+}
+
+.formulario__derecho textarea {
+    margin-top: 5px;
+    width: 100%;
+}
+
+/******* Inicio estilos sección Contacto *******/
+
+
+
+
+
+
+
+
+.card{
+    position: relative;
+    width:400px;
+    margin:50px;
+    background-color: lightgreen;
+    padding:20px;
+    border-radius: 12px;
+    -webkit-box-shadow: 10px 10px 34px -16px rgba(0,0,0,0.37);
+    -moz-box-shadow: 10px 10px 34px -16px rgba(0,0,0,0.37);
+    box-shadow: 10px 10px 34px -16px rgba(0,0,0,0.37);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container{
+    width:100%;
+    height: 300px;
+}
+.img-container img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.card h2{
+    font-size:26px;
+    margin-bottom: 12px;
+    text-align: center;
+    color:white;
+}
+
+.card p{
+    text-align: center;
+    margin-bottom: 12px;
+    color:white;
+}
+
+button{
+    background-color: lightcoral;
+    color:white;
+}
+
+.info-container{
+    display:none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 10000;
+    background-color: rgba(0,0,0,0.37);
+    top: 0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+
+.card:hover .info-container{
+    display: flex;
+}
+
