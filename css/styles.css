@@ -39,8 +39,12 @@ main {
     font-weight: 600;
 }
 
-.navbar-light {
+.container-fluid  {
     background-color: #EFE8D2;
+}
+
+.navbar {
+    padding: 0 !important;
 }
 
 .titulo {
