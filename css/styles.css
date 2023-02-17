@@ -1,17 +1,20 @@
 /******* Inicio estilos generales *******/
 * {
-    font-family: 'Bebas Neue';
+    font-family: 'Rubik', sans-serif;
     margin: 0;
     padding: 0;
 }
 
+main {
+    padding-top: 20px;
+}
+
 .menu {
     display: flex;
-    height: 80px;
+    flex-direction: row-reverse;
     background: #EFE8D2;
     align-items: center;
     justify-content: space-between;
-    padding: 0 100px 0 100px;
     flex-wrap: wrap;
 }
 
@@ -28,12 +31,16 @@
 .menu ul li a {
     font-size: 25px;
     font-weight: 500;
-    color: #000000;
+    color: #9C8237;
     text-decoration: none;
     padding: 15px;
 }
 .menu ul li a:hover {
     font-weight: 600;
+}
+
+.navbar-light {
+    background-color: #EFE8D2;
 }
 
 .titulo {
@@ -70,6 +77,22 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.menu-link{
+    font-size: 25px;     
+    color: #9C8237;
+    text-decoration: none;
+}
+
+.menu-item {
+    font-size: 25px;
+    font-weight: 500;
+    color: #9C8237;
+    text-decoration: none;
+}
+.menu-item:hover {
+    font-weight: 600;
+}
+
 /******* Fin estilos generales *******/
 
 /******* Inicio estilos sección Home *******/
@@ -85,18 +108,21 @@
     align-items: center;
     justify-content: space-around;
     padding: 5%;
+    font-family: 'Rubik', sans-serif;
 }
 
 .banner_inicio_izq h3 {
     font-size: 40px;
     font-weight: 500;
     color: #9C8237;
+    font-family: 'Rubik', sans-serif;
 }
 
 .banner_inicio_izq p {
     font-size: 20px;
     font-weight: 500;
     color: #9C8237;
+    font-family: 'Rubik', sans-serif;
 }
 
 .banner_inicio_izq button {
@@ -106,12 +132,19 @@
     border-radius: 5%;
     border-color: #9C8237;
 }
+
 .banner_inicio_izq a {
     text-decoration: none;
     color: #EFE8D2; 
-    font-size: 25px;
+    font-size: 20px;
+    font-family: 'Rubik', sans-serif;
 }
 
+.banner_inicio_izq a:hover {
+    text-decoration: none;
+    color: #EFE8D2;
+    font-weight: bold; 
+}
 
 .banner_inicio_der {
     flex-direction:row;
@@ -132,6 +165,60 @@
     border-radius: 0px 0px 0px 65px;
 }
 
+.banner_materiales{
+    display: flex;
+    flex-direction:column; 
+    align-items: center;
+}
+
+.banner_materiales_titulo h3 {
+    font-size: 30px;
+    font-weight: 1000;
+    color: #9C8237;
+    font-family: 'Rubik', sans-serif;
+}
+
+.banner_materiales_img{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    margin: 2%;
+}
+
+.banner_materiales_img_item {
+    display: inline-block;
+    text-align: center;
+}
+
+.banner_materiales img{
+    width: 180px;
+}
+
+.banner_elegidos {
+   background-color: #E4D8B4;
+   display: flex;
+   flex-direction:column; 
+   align-items: center;
+   padding: 20px;
+}
+
+.banner_elegidos h3 {
+    font-size: 30px;
+    font-weight: 1000;
+    color: #9C8237;
+    font-family: 'Rubik', sans-serif;
+}
+.banner_elegidos_img {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+
+.banner_elegidos_img img {
+    border-radius: 25px;
+    padding: 10px;
+}
+
 /******* Fin estilos sección Home *******/
 
 /******* Inicio estilos sección Catálogo *******/
@@ -141,7 +228,8 @@
     flex-direction: row;
     align-content:stretch;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
 }
 
 .catalogo__producto {
@@ -165,6 +253,13 @@
 
 .catalogo__producto__descripcion__nombre {
     font-weight: bold;
+    padding-top: 5px;
+    margin-bottom: 0px;
+}
+
+.catalogo__producto__descripcion__precio {
+    padding-top: 5px;
+    margin-bottom: 0px; 
 }
 
 /******* Fin estilos sección Catálogo *******/
@@ -186,7 +281,6 @@
 .nosotros p {
     width: 47%;
 }
-
 
 /******* Fin estilos sección Nosotros *******/
 
@@ -213,7 +307,6 @@
 .formulario {
     flex-direction:row;
     list-style: none;
-    background: #ffffff;
     display:flex;
     padding: 5%;
     justify-content: center;
@@ -224,12 +317,13 @@
     flex-direction:column;
     list-style: none;
     display:flex;
+    animation: lightSpeedInRight; 
+    animation-duration: 2s; 
 }
 
 .formulario__izquierdo img {
     width: 40px;
 }
-
 
 .formulario__izquierdo__item {
     flex-direction:row;
@@ -238,6 +332,7 @@
 }
 
 .formulario__izquierdo__item p {
+    font-weight: bold;
     margin: 10px;
 }
 
@@ -250,7 +345,8 @@
 }
 
 .formulario__derecho__div label {
-    margin-bottom: 5px;
+    font-weight: bold;
+    margin-bottom: 0px;
 }
 
 .formulario__derecho input {
@@ -263,14 +359,12 @@
     width: 100%;
 }
 
+.boton {
+    background-color: #EFE8D2;
+    font-weight: bold;
+}
+
 /******* Inicio estilos sección Contacto *******/
-
-
-
-
-
-
-
 
 .card{
     position: relative;
@@ -318,6 +412,9 @@ button{
 }
 
 .info-container{
+    display: flex;
+}
+.info-container{
     display:none;
     flex-direction: column;
     justify-content: center;
@@ -331,7 +428,48 @@ button{
     height:100%;
 }
 
-.card:hover .info-container{
+.card:hover {
     display: flex;
 }
 
+/******* Inicio estilos Mobile *******/
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .formulario {
+        flex-direction: column;
+        gap:unset;
+    }
+
+    .formulario__derecho {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .formulario__izquierdo {
+        padding-bottom: 20px;
+    }
+
+    .footer__links {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .footer__links {
+        padding-top: 10px;
+    }
+
+    .galeria {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .galeria img {
+        width: 100%;
+        padding:10px;
+        animation: fadeIn; 
+        animation-duration: 3s; 
+    }
+
+}
+
+/******* Fin estilos Mobile *******/
