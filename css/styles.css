@@ -474,6 +474,9 @@ button{
         animation-duration: 3s; 
     }
 
+    .navbar-nav {
+        margin-right: auto!important;
+    }
 }
 
 /******* Fin estilos Mobile *******/
