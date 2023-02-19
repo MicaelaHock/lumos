@@ -277,18 +277,14 @@ main {
 
 /******* Inicio estilos sección Nosotros *******/
 .nosotros {
-    flex-direction:row;
-    display:flex;
+    display: grid;
+    justify-items: center;
     align-items: center;
-    justify-content: space-between;
-    padding: 5%;
-    width: auto;
-    margin: 8px;
-    
+    grid-template-columns: 2fr 2fr;
 }
 
 .nosotros img {
-    width: 47%;
+    width: 85%;
     border-radius: 25px;
     animation: backInRight; 
     animation-duration: 2s
@@ -297,12 +293,16 @@ main {
 
 .nosotros p {
     font-size: 25px;
-    width: 47%;
     font-weight: 500;
     color: #9C8237;
     font-family: 'Rubik', sans-serif;
+    text-align: center;
     animation: backInLeft; 
     animation-duration: 2s
+}
+
+.contenedor {
+    margin: 20px 0 20px 0;
 }
 
 /******* Fin estilos sección Nosotros *******/
@@ -542,6 +542,7 @@ button{
     }
     
     .nosotros {
+        display: flex;
         flex-direction: column;
         margin:0;
     }
@@ -554,7 +555,7 @@ button{
         width: 100%;
     }
 
-    .contentedor div:nth-child(2) {
+    .contenedor div:nth-child(2) {
         flex-direction: column-reverse;
     }
 }
