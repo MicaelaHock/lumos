@@ -135,6 +135,8 @@ main {
     padding: 10px 30px 10px 30px;
     border-radius: 5%;
     border-color: #9C8237;
+    max-width: 200px;
+    margin: 0 auto;
 }
 
 .banner_inicio_izq a {
@@ -234,12 +236,6 @@ main {
 
 /******* Inicio estilos sección Catálogo *******/
 .catalogo {
-    display: flex; 
-    flex-wrap: wrap; 
-    flex-direction: row;
-    align-content:stretch;
-    align-items: center;
-    justify-content: space-evenly;
     padding-bottom: 20px;
 }
 
@@ -266,6 +262,7 @@ main {
     font-weight: bold;
     padding-top: 5px;
     margin-bottom: 0px;
+    font-size: 15px;
 }
 
 .catalogo__producto__descripcion__precio {
@@ -336,7 +333,7 @@ main {
     display:flex;
     padding: 5%;
     justify-content: center;
-    gap: 15rem;
+    gap: 8rem;
 }
 
 .formulario__izquierdo {
@@ -363,7 +360,7 @@ main {
 }
 
 .formulario__derecho {
-    width: 30%;
+    width: 45%;
 }
 
 .formulario__derecho__div {
@@ -467,13 +464,19 @@ button{
 }
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .navbar-toggler:focus {
+        color: #9C8237;
+    }
+
     .banner_materiales{
         display: none;
     }
+
     .ancho-materiales{
         width: 55% !important;
         margin: auto;
     }
+    
     .centrado {
         text-align: center;
         font-size: 17px;
@@ -522,6 +525,22 @@ button{
         margin-right: auto!important;
     }
 
+    .banner_inicio_der {
+        flex-direction: column;
+    }
+
+    .banner_inicio_der_img1 {
+        width: 100%;
+        padding: 1rem;  
+        border-radius: 0;
+    }
+
+    .banner_inicio_der_img2 {
+        width: 100%;
+        padding: 1rem;
+        border-radius: 0;
+    }
+
     .banner_inicio {
         flex-direction: column;
         padding: 10px;
@@ -548,6 +567,7 @@ button{
     }
 
     .nosotros img {
+        padding: 1rem;
         width: 100%;
     }
 
