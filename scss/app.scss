@@ -1,0 +1,20 @@
+// General
+
+@import "./general/colores.scss";
+@import "./general/tipografia.scss";
+@import "./general/mixins.scss";
+@import "./general/general.scss";
+
+// layout
+
+@import "./layout/footer.scss";
+@import "./layout/header.scss";
+
+
+// Paginas
+
+@import "./paginas/catalogo.scss";
+@import "./paginas/nosotros.scss";
+@import "./paginas/index.scss";
+@import "./paginas/contacto.scss";
+@import "./paginas/galeria.scss";

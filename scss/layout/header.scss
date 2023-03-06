@@ -1,0 +1,48 @@
+.menu-link {
+    font-size: 25px;     
+    color: $color-primario;
+    text-decoration: none;
+}
+
+.menu {
+    @include flexbox(flex, row-reverse);
+    background: $color-secundario;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    ul {
+        li {
+            a {
+                @extend .menu-link;
+                font-weight: 500;
+                padding: 15px;
+                
+                &:hover {
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+.menu-item {
+    @extend .menu-link;
+    font-weight: 500;
+    
+    &:hover {
+        font-weight: 600;
+    }
+}
+
+.menu__logo img {
+    height: 85px;
+}
+
+.container-fluid  {
+    background-color: $color-secundario;
+}
+
+.navbar {
+    padding: 0;
+}
