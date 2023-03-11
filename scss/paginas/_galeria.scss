@@ -1,0 +1,27 @@
+.galeria {
+  @include flexbox(flex, row);
+  align-items: center;
+  justify-content: space-between;
+  padding: 5%;
+  flex-flow: wrap;
+
+  img {
+    width: 47%;
+    border-radius: 25px;
+    padding: 10px;
+    animation: fadeIn;
+    animation-duration: 1s;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .galeria {
+    flex-direction: column;
+    padding: 0;
+
+    img {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+}

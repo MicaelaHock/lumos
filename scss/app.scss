@@ -1,20 +1,19 @@
 // General
 
-@import "./general/colores.scss";
-@import "./general/tipografia.scss";
-@import "./general/mixins.scss";
-@import "./general/general.scss";
+@import "./general/_colores.scss";
+@import "./general/_tipografia.scss";
+@import "./general/_mixins.scss";
+@import "./general/_general.scss";
 
 // layout
 
-@import "./layout/footer.scss";
-@import "./layout/header.scss";
-
+@import "./layout/_footer.scss";
+@import "./layout/_header.scss";
 
 // Paginas
 
-@import "./paginas/catalogo.scss";
-@import "./paginas/nosotros.scss";
-@import "./paginas/index.scss";
-@import "./paginas/contacto.scss";
-@import "./paginas/galeria.scss";
+@import "./paginas/_catalogo.scss";
+@import "./paginas/_nosotros.scss";
+@import "./paginas/_index.scss";
+@import "./paginas/_contacto.scss";
+@import "./paginas/_galeria.scss";

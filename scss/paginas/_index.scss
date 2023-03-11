@@ -1,0 +1,183 @@
+.banner_inicio {
+  display: flex;
+  padding-bottom: 50px;
+}
+
+.banner_inicio_izq_fuente {
+  font-weight: 500;
+  color: $color-primario;
+}
+
+.banner_inicio_izq_a {
+  text-decoration: none;
+  color: $color-secundario;
+}
+
+.banner_inicio_izq {
+  @include flexbox(flex, column);
+  width: 47%;
+  list-style: none;
+  justify-content: space-around;
+  padding: 5%;
+
+  h3 {
+    @extend .banner_inicio_izq_fuente;
+    font-size: 40px;
+  }
+
+  p {
+    @extend .banner_inicio_izq_fuente;
+    font-size: 20px;
+  }
+
+  button {
+    font-weight: 500;
+    background-color: $color-primario;
+    padding: 10px 30px 10px 30px;
+    border-radius: 5%;
+    border-color: $color-primario;
+    max-width: 200px;
+    margin: 0 auto;
+  }
+
+  a {
+    @extend .banner_inicio_izq_a;
+    font-size: 20px;
+
+    &:hover {
+      @extend .banner_inicio_izq_a;
+      font-weight: bold;
+    }
+  }
+}
+
+.banner_inicio_der {
+  @include flexbox(flex, row);
+  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.banner_inicio_der_img1 {
+  width: 47%;
+  border-radius: 65px 0px 0px 0px;
+}
+
+.banner_inicio_der_img2 {
+  width: 47%;
+  border-radius: 0px 0px 0px 65px;
+}
+
+.banner_materiales {
+  @include flexbox(flex, column);
+  align-items: center;
+
+  img {
+    width: 180px;
+  }
+}
+
+.banner_materiales_titulo {
+  font-size: 30px;
+  font-weight: 1000;
+  color: $color-primario;
+}
+
+.banner_materiales_img {
+  @include flexbox(flex, row);
+  justify-content: space-around;
+  margin: 2%;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  animation: bounce;
+  animation-duration: 2s;
+}
+
+.banner_materiales_img_item {
+  display: inline-block;
+  text-align: center;
+  font-size: 17px;
+  color: $color-primario;
+  padding: 10px;
+}
+
+.banner_elegidos {
+  @include flexbox(flex, column);
+  background-color: $color-terciario;
+  align-items: center;
+  padding: 20px;
+
+  h3 {
+    font-size: 30px;
+    font-weight: 1000;
+    color: $color-primario;
+  }
+}
+
+.banner_elegidos_img {
+  @include flexbox(flex, row);
+  justify-content: space-around;
+
+  img {
+    border-radius: 25px;
+    padding: 10px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  #carousel-materiales {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1025px) {
+  .banner_materiales {
+    display: none;
+  }
+
+  .ancho-materiales {
+    width: 55%;
+    margin: auto;
+  }
+
+  .centrado {
+    text-align: center;
+    font-size: 17px;
+    color: $color-primario;
+    padding: 10px;
+  }
+
+  .banner_materiales_titulo {
+    text-align: center;
+  }
+
+  .banner_inicio_der {
+    flex-direction: column;
+  }
+
+  .banner_inicio_der_img1,
+  .banner_inicio_der_img2 {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0;
+  }
+
+  .banner_inicio {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .banner_inicio_izq {
+    padding: 0;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .banner_elegidos__productos {
+    text-align: center;
+
+    img {
+      padding-bottom: 10px;
+    }
+  }
+}

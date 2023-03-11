@@ -4,7 +4,8 @@
 
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 main {
   padding-top: 20px; }
@@ -98,12 +99,16 @@ main {
   text-align: center; }
 
 .catalogo__producto__descripcion__precio, .catalogo__producto__descripcion__nombre {
+  font-weight: bold;
   padding-top: 5px;
   margin-bottom: 0px; }
 
 .catalogo__producto__descripcion__nombre {
   font-weight: bold;
-  font-size: 15px; }
+  font-size: 18px; }
+
+body {
+  overflow-x: hidden; }
 
 .nosotros {
   display: grid;
@@ -114,14 +119,14 @@ main {
     width: 85%;
     border-radius: 25px;
     animation: backInRight;
-    animation-duration: 2s; }
+    animation-duration: 1s; }
   .nosotros p {
     font-size: 25px;
     font-weight: 500;
     color: #9C8237;
     text-align: center;
     animation: backInLeft;
-    animation-duration: 2s; }
+    animation-duration: 1s; }
 
 .contenedor {
   margin: 20px 0 20px 0; }
@@ -238,11 +243,11 @@ main {
     border-radius: 25px;
     padding: 10px; }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1025px) {
   #carousel-materiales {
     display: none; } }
 
-@media only screen and (min-width: 0px) and (max-width: 767px) {
+@media only screen and (min-width: 0px) and (max-width: 1025px) {
   .banner_materiales {
     display: none; }
   .ancho-materiales {
@@ -257,7 +262,8 @@ main {
     text-align: center; }
   .banner_inicio_der {
     flex-direction: column; }
-  .banner_inicio_der_img1, .banner_inicio_der_img2 {
+  .banner_inicio_der_img1,
+  .banner_inicio_der_img2 {
     width: 100%;
     padding: 1rem;
     border-radius: 0; }
@@ -281,14 +287,14 @@ main {
 .formulario {
   padding: 5%;
   justify-content: center;
-  gap: 8rem; }
+  gap: 3rem; }
 
 .formulario__izquierdo {
   display: flex;
   flex-direction: column;
   list-style: none;
   animation: lightSpeedInRight;
-  animation-duration: 2s; }
+  animation-duration: 1s; }
   .formulario__izquierdo img {
     width: 40px; }
 
@@ -298,7 +304,8 @@ main {
 
 .formulario__derecho {
   width: 45%; }
-  .formulario__derecho input, .formulario__derecho textarea {
+  .formulario__derecho input,
+  .formulario__derecho textarea {
     margin-top: 5px;
     width: 100%; }
 
@@ -334,7 +341,7 @@ main {
     border-radius: 25px;
     padding: 10px;
     animation: fadeIn;
-    animation-duration: 3s; }
+    animation-duration: 1s; }
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .galeria {
